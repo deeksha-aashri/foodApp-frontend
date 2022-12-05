@@ -1,8 +1,8 @@
 {
-  "homepage": "http://localhost:3000/",
+  "homepage": "https://astonishing-sprite-b38d7c.netlify.app/",
   "name": "foodapp",
   "version": "0.1.0",
-  "proxy": "http://localhost:3000/",
+  "proxy": "https://astonishing-sprite-b38d7c.netlify.app/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",
