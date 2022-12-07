@@ -29,7 +29,7 @@ function NavBar() {
                     {user ?
                     
                         <>
-                        {console.log(user)}
+                        {console.log("The user is ",user)}
                             <li>
                                 <Link to="/profilePage">{user?.data?.name}</Link>
                             </li>

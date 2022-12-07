@@ -28,7 +28,7 @@ function AuthProvider({ children }) {
                 email: email,
                 password: password
             });
-            console.log("dataaa",data.data);
+            console.log("The login data which has been posted is ",data.data);
             userSet(data.data);
             localStorage.setItem("user", JSON.stringify(data.data));
             return data;

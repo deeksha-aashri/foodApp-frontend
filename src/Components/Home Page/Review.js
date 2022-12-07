@@ -5,23 +5,28 @@ import axios from 'axios';
 
 function Review() {
     const [arr, setarr] = useState([]);
-
+    
     useEffect(async () => {
-        try {
-            const data = await axios.get("/review/top3");
-            console.log(data);
-            setarr(data.data.data);
-            // console.log(data.data.length);
-        } catch (err) {
-            console.log(err);
-        }
+        
+       
+             try {
+                const data = await axios.get("/review/top3");
+                console.log(data);
+                setarr(data.data.reviews);
+                console.log(data.data.length);
+            } catch (err) {
+                console.log(err);
+            }
+        
+        
+      
     }, [])
 
     return (
         <div className="reviewImg">
             <div className="reviewCard">
                 <div className='h1Box'>
-                    <h1 className='h1'>REVIEWS</h1>
+                    <h1 className='h1'>REVIEWSss</h1>
                     <div className="line"></div>
                 </div>
                 <div className="rDetail">
